@@ -1,12 +1,15 @@
-import './App.css'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from "./pages/Home/index"
 
 function App() {
 
   return (
-    <>
-      <h1> Mern Portfolio </h1>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
