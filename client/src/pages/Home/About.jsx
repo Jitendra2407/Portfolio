@@ -15,8 +15,8 @@ const About = () => {
     <div>
       <SectionTitle title="About"></SectionTitle>
 
-      <div className="flex w-full items-center">
-        <div className="h-[70vh] w-1/2">
+      <div className="flex w-full items-center sm:flex-col">
+        <div className="h-[70vh] w-1/2 sm:w-full">
           <dotlottie-player
             src="https://lottie.host/00631d31-4422-4aae-b46c-46fc39161f98/J5CWDiiZaJ.lottie"
             background="transparent"
@@ -25,7 +25,7 @@ const About = () => {
             autoplay
           ></dotlottie-player>
         </div>
-        <div className="flex flex-col gap-5 w-1/2">
+        <div className="flex flex-col gap-5 w-1/2 sm:w-full">
           <p className="text-white">
             Hello My name is Jitendra Kumar Thakur. I enjoy creating things that
             live on the internet. My interest in web development started back in
