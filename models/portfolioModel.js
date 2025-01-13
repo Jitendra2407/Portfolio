@@ -133,8 +133,8 @@ const contactSchema = new mongoose.Schema({
 module.exports = {
   Intro: mongoose.model("intros", introSchema),
   About: mongoose.model("abouts", aboutSchema),
-  Experience: mongoose.model("experience", experienceSchema),
-  Projects: mongoose.model("projects", projectsSchema),
-  Courses: mongoose.model("courses", coursesSchema),
+  Experience: mongoose.model("experiences", experienceSchema),
+  Project: mongoose.model("projects", projectsSchema),
+  Course: mongoose.model("courses", coursesSchema),
   Contact: mongoose.model("contacts", contactSchema),
 };
