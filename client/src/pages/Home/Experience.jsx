@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import SectionTitle from "../../components/SectionTitle";
-import { experiences } from "../../resources/experience";
+import { useSelector } from "react-redux";
 
 const Experience = () => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
+  const { portfolioData } = useSelector((state) => state.root);
+  const { experience: experiences = [] } = portfolioData || {};
+  
   return (
     <div>
       <SectionTitle title="Experience" />
